@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ерхан — Репетитор по математике</title>
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="fonts.googleapis.com" rel="stylesheet" />
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="./static/css/main.css" />
+
+    <!-- Основной JS -->
+    <script src="./static/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Мобильное меню -->
+    <div id="nav-overlay" class="overlay">
+      <button class="close-btn">&times;</button>
+      <nav class="overlay-menu">
+        <a href="#" data-key="nav_hero">Записаться</a>
+        <a href="#about" data-key="nav_about">Обо мне</a>
+        <a href="#format" data-key="nav_format">Формат обучения</a>
+        <a href="#contacts" data-key="nav_contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header id="header">
+      <div class="header-content">
+        <!-- Переключатель языка -->
+        <div class="lang-switcher">
+          <a href="#" id="ru-btn" class="active">RU</a>
+          <span>/</span>
+          <a href="#" id="kz-btn">KZ</a>
+        </div>
+
+        <!-- Бургер-меню -->
+        <button class="burger-btn">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Главный экран -->
+      <section class="hero">
+        <div class="main_container">
+          <div class="main_page_left">
+            <div class="teacher-box">
+              <img
+                src="static/img/main-photo.png"
+                alt="Ерхан"
+                class="teacher-img"
+              />
+            </div>
+          </div>
+
+          <div class="main_page_right">
+            <h1 data-key="h1">Математика для всех</h1>
+            <p data-key="description">
+              Меня зовут Ерхан. Уже 7 лет я помогаю ученикам 5–11 классов
+              разобраться в математике без зубрежки.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=77029500697&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%8F%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0" class="cta-button" data-key="button">Записаться</a>
+          </div>
+        </div>
+
+        <!-- Декоративная полоска -->
+        <div class="wide-strip"></div>
+      </section>
+
+      <!-- Блок "Обо мне" -->
+      <section class="about" id="about">
+        <div class="section-divider"></div>
+
+        <div class="container">
+          <h2 data-key="about_title">Почему выбирают меня?</h2>
+
+          <div class="about-grid">
+            <!-- Верхний ряд карточек -->
+            <div class="cards-row-top">
+              <div class="card">
+                <h3 data-key="card1_t">Простое объяснение</h3>
+                <p data-key="card1_d">
+                  Если не понятно с первого раза — найду ещё пять способов
+                  объяснить.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3 data-key="card2_t">Всегда на связи</h3>
+                <p data-key="card2_d">
+                  Я всегда на связи в мессенджерах. Ученик может задать вопрос
+                  по домашке в любое время.
+                </p>
+              </div>
+            </div>
+
+            <!-- Нижняя карточка -->
+            <div class="card">
+              <h3 data-key="card3_t">Индивидуальный план</h3>
+              <p data-key="card3_d">
+                Фокусируемся на сложных и нужных темах и планомерно движемся
+                к вашей цели.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Формат обучения -->
+      <section class="format" id="format">
+        <div class="section-divider"></div>
+
+        <div class="container">
+          <h2 class="format_title" data-key="format_title">Формат обучения</h2>
+
+          <div class="format-grid">
+            <!-- Занятия в парах -->
+            <div class="format-card">
+              <div class="format-info">
+                <h3 data-key="pair_t">Занятия в парах</h3>
+                <div class="price" data-key="pair_p">50.000 ₸</div>
+                <p data-key="pair_d">
+                  Занятия в парах 3 раза в неделю — это идеальный баланс.
+                </p>
+              </div>
+
+              <div class="format-img">
+                <img
+                  src="./static/img/two-physics-students-teacher.png"
+                  alt="Пары"
+                />
+              </div>
+            </div>
+
+            <!-- Индивидуальные занятия -->
+            <div class="format-card">
+              <div class="format-info">
+                <h3 data-key="indiv_t">Индивидуальные уроки</h3>
+                <div class="price" data-key="indiv_p">60.000 ₸</div>
+                <p data-key="indiv_d">
+                  Занимаемся 3 раза в неделю по 1.5 часа в вашем темпе.
+                </p>
+              </div>
+
+              <div class="format-img">
+                <img
+                  src="static/img/57-573935_teacher-student-stock-png-transparent-png.png"
+                  alt="Индивидуально"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контакты -->
+      <section class="contacts" id="contacts">
+        <div class="section-divider"></div>
+
+        <div class="container">
+          <h2 data-key="contacts_title">Контакты</h2>
+
+          <div class="contacts-grid">
+            <div class="contact-card">
+              <!-- Социальные сети -->
+              <div class="social-links">
+                <a href="https://www.instagram.com/yerkhan.shogy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn instagram">
+                  Instagram
+                </a>
+                <a href="https://www.tiktok.com/@repetitor_yerkhan?_r=1&_t=ZM-92dFK0BLvq8" class="social-btn tiktok">
+                  TikTok
+                </a>
+              </div>
+
+              <!-- Телефон -->
+              <div class="phone-box">
+                <a href="tel:+77029500697" class="phone-link">
+                  +7 702 950 06 97
+                </a>
+              </div>
+
+              <!-- Адрес -->
+              <div class="address-box">
+                <p>г. Актау, 19 микрорайон, 26 дом</p>
+              </div>
+
+              <!-- Карты -->
+              <div class="map-links">
+                <div class="map-item">
+                  <span>2GIS:</span>
+                  <a href="https://2gis.kz/aktau/geo/70030076184155647/51.155538,43.678796" target="_blank">(кликните по надписи)</a>
+                </div>
+                <div class="map-item">
+                  <span>Google Maps:</span>
+                  <a href="https://maps.app.goo.gl/fhNTezRSs2kX5Cs37?g_st=ipc" target="_blank">
+                    (кликните по надписи)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Дополнительные скрипты -->
+    <script>
+      // Скрипт для тени при скролле
+    </script>
+  </body>
+</html>
